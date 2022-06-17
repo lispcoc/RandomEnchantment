@@ -1,5 +1,114 @@
-import { FormType, Game, Actor, Form, Enchantment, Weapon, Utility, Debug, once, printConsole, ObjectReference } from 'skyrimPlatform'
+import { FormType, Game, Actor, Form, Enchantment, SlotMask, MagicEffect, Utility, Debug, once, printConsole, ObjectReference, Armor, Weapon } from 'skyrimPlatform'
 import * as MiscUtil from "./PapyrusUtil/MiscUtil";
+import * as StorageUtil from "./PapyrusUtil/StorageUtil";
+
+const enum EnchantId {
+    ResistShock        = 0x00049295,
+    ResistPoison       = 0x000ff15e,
+    ResistMagic        = 0x000b7a35,
+    ResistDisease      = 0x00100e60,
+    ResistFrost        = 0x0003eaeb,
+    ResistFire         = 0x00048c8b,
+    Muffle             = 0x00092a57,
+    Waterbreathing     = 0x00092a48,
+    FortifyTwoHanded   = 0x0007a106,
+    FortifySneak       = 0x0007a103,
+    FortifySmithing    = 0x0007a102,
+    FortifyRestoration = 0x0007a101,
+    FortifyPickpocket  = 0x0007a100,
+    FortifyOneHanded   = 0x0007a0ff,
+    FortifyLockpicking = 0x0007a0fc,
+    FortifyLightArmor  = 0x0007a0fb,
+    FortifyIllusion    = 0x0007a0fa,
+    FortifyHeavyArmor  = 0x0007a0f9,
+    FortifyDestruction = 0x0007a0f6,
+    FortifyConjuration = 0x0007a0f5,
+    FortifyBlock       = 0x0007a0f3,
+    FortifyBarter      = 0x0007a104,
+    FortifyArchery     = 0x0007a0fe,
+    FortifyAlteration  = 0x0007a0f2,
+    FortifyAlchemy     = 0x0008b65c,
+    UnarmedDamage      = 0x000424e2,
+    CarryWeight        = 0x0007a0f4,
+    RegenerateStamina  = 0x0007a105,
+    FortifyStamina     = 0x00049507,
+    RegenerateMagicka  = 0x0007a0fd,
+    FortifyMagicka     = 0x00049504,
+    FortifyHealth      = 0x000493aa,
+    RegenerateHealth   = 0x0007a0f8,
+
+    AbsorbHealth       = 0x000aa155,
+    AbsorbStamina      = 0x000aa157,
+    FireDamage         = 0x0004605a,
+    DamageMagicka      = 0x0005b44f,
+    ShockDamage        = 0x0004605c,
+    DamageStamina      = 0x0005b450,
+    Banish             = 0x000acbb5,
+    Fear               = 0x0005b451,
+    TurnUndead         = 0x0005b46b,
+    Paralyze           = 0x000acbb6,
+    SoulTrap           = 0x0005b452,
+    BriarheartGeis     = 0x0010582e,
+    FierySoulTrap      = 0x00040003,
+    HuntsmansProwess   = 0x00105831,
+    LightDamage        = 0x0003b0b1,
+    SmithingExpertise  = 0x001019d6,
+}
+
+const weapon_enchants = [
+    {id: EnchantId.AbsorbHealth},
+    {id: EnchantId.ResistShock},
+    {id: EnchantId.FireDamage},
+    {id: EnchantId.DamageMagicka},
+    {id: EnchantId.ShockDamage},
+    {id: EnchantId.DamageStamina},
+    {id: EnchantId.Banish},
+    {id: EnchantId.Fear},
+    {id: EnchantId.TurnUndead},
+    {id: EnchantId.Paralyze},
+    {id: EnchantId.SoulTrap},
+    {id: EnchantId.BriarheartGeis},
+    {id: EnchantId.FierySoulTrap},
+    {id: EnchantId.HuntsmansProwess},
+    {id: EnchantId.LightDamage},
+    {id: EnchantId.SmithingExpertise},
+];
+
+const armor_enchants = [
+    {id: EnchantId.ResistShock,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.ResistPoison,        mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.ResistMagic,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Shield},
+    {id: EnchantId.ResistDisease,       mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.ResistFrost,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.ResistFire,          mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.Muffle,              mask: SlotMask.Feet},
+    {id: EnchantId.Waterbreathing,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Ring},
+    {id: EnchantId.FortifyTwoHanded,    mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.FortifySneak,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.FortifySmithing,     mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyRestoration,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyPickpocket,   mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.FortifySneak,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.FortifyLockpicking,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyLightArmor,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyIllusion,     mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyHeavyArmor,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyDestruction,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyConjuration,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyBlock,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Shield},
+    {id: EnchantId.FortifyBarter,       mask: SlotMask.Neck},
+    {id: EnchantId.FortifyArchery,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyAlteration,   mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyAlchemy,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.UnarmedDamage,       mask: SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.CarryWeight,         mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.RegenerateStamina,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.FortifyStamina,      mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
+    {id: EnchantId.RegenerateMagicka,   mask: SlotMask.Head || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
+    {id: EnchantId.FortifyMagicka,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
+    {id: EnchantId.FortifyHealth,       mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
+    {id: EnchantId.RegenerateHealth,    mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
+];
 
 const getBaseQuality = (level : number) => {
     return Math.floor(level/ 5);
@@ -75,7 +184,17 @@ const getMultiplier = (quality : number) => {
     return list[quality];
 }
 
-const enchants = [0x000424e2];
+const setAlreadyProceed = (f : Form) => {
+    StorageUtil.SetIntValue(f, "random-enchantment_proceeded", 1);
+}
+
+const getAlreadyProceed = (f : Form) => {
+    return StorageUtil.GetIntValue(f, "random-enchantment_proceeded", 1) > 0;
+}
+
+const rng = (min : number, max : number) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
 const mainloop = async () => {
     var player = Game.getPlayer()!;
@@ -93,19 +212,38 @@ const mainloop = async () => {
         }
         items.forEach(item => {
             printConsole(item.getName());
-            if(!item.getEnchantment()) {
-                var enc = Enchantment.from(Game.getForm(enchants[0]));
+            if(!item.getEnchantment() && !getAlreadyProceed(item)) {
+                var enc : Enchantment | null = null;
+                var a = Armor.from(item);
+                var w = Weapon.from(item);
+                if(item.getType() == FormType.Armor) {
+                    var filtered = armor_enchants.filter(e => {
+                        if(a == null) return false;
+                        return (a.getSlotMask() & e.mask) != 0;
+                    });
+                    enc = Enchantment.from(Game.getForm(filtered[rng(0, filtered.length)].id));
+                }
+                if(item.getType() == FormType.Weapon) {
+                    enc = Enchantment.from(Game.getForm(weapon_enchants[rng(0, weapon_enchants.length)].id));
+                }
                 if(enc) {
-                    var magic = enc.getNthEffectMagicEffect(0);
-                    var base_mag = enc.getNthEffectMagnitude(0);
-                    var base_area = enc.getNthEffectArea(0);
-                    var base_dur = enc.getNthEffectDuration(0);
                     var multiplier = getMultiplier(randomizeQuality(getBaseQuality(level)));
-                    if(magic){
-                        item.getItemHealthPercent()
-                        if(item.getType() == FormType.Armor) {
-                            item.createEnchantment(3000, [magic], [base_mag * multiplier], [base_area], [base_dur]);
+                    var magics: MagicEffect[] = [];
+                    var base_mags: number[] = [];
+                    var base_areas: number[] = [];
+                    var base_durs: number[] = [];
+                    for( var i = 0; i < enc.getNumEffects(); i++){
+                        if(enc.getNthEffectMagicEffect(i)) {
+                            magics.push(enc.getNthEffectMagicEffect(i)!);
+                            base_mags.push(enc.getNthEffectMagnitude(i) * multiplier);
+                            base_areas.push(enc.getNthEffectArea(i));
+                            base_durs.push(enc.getNthEffectDuration(i));
                         }
+                    }
+                    if(magics.length){
+                        item.getItemHealthPercent();
+                        item.createEnchantment(3000, magics, base_mags, base_areas, base_durs);
+                        setAlreadyProceed(item);
                     }
                 }
             }
