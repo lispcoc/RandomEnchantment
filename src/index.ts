@@ -1,6 +1,7 @@
-import { FormType, Game, Actor, Form, Enchantment, SlotMask, MagicEffect, Utility, Debug, once, printConsole, ObjectReference, Armor, Weapon } from 'skyrimPlatform'
+import { TESModPlatform, getPluginSourceCode, on, callNative, FormType, Game, Actor, Form, Enchantment, SlotMask, MagicEffect, Utility, Debug, once, writeLogs, printConsole, ObjectReference, Armor, Weapon, MiscObject, Container, Keyword } from '@skyrim-platform/skyrim-platform'
 import * as MiscUtil from "./PapyrusUtil/MiscUtil";
 import * as StorageUtil from "./PapyrusUtil/StorageUtil";
+import EnchantList from "./EnchantList.json";
 
 const enum EnchantId {
     ResistShock        = 0x00049295,
@@ -74,41 +75,62 @@ const weapon_enchants = [
     {id: EnchantId.SmithingExpertise},
 ];
 
-const armor_enchants = [
-    {id: EnchantId.ResistShock,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.ResistPoison,        mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.ResistMagic,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Shield},
-    {id: EnchantId.ResistDisease,       mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.ResistFrost,         mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.ResistFire,          mask: SlotMask.Neck || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.Muffle,              mask: SlotMask.Feet},
-    {id: EnchantId.Waterbreathing,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Ring},
-    {id: EnchantId.FortifyTwoHanded,    mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.FortifySneak,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.FortifySmithing,     mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyRestoration,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyPickpocket,   mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.FortifySneak,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.FortifyLockpicking,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyLightArmor,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyIllusion,     mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyHeavyArmor,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyDestruction,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyConjuration,  mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyBlock,        mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Shield},
-    {id: EnchantId.FortifyBarter,       mask: SlotMask.Neck},
-    {id: EnchantId.FortifyArchery,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyAlteration,   mask: SlotMask.Head || SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyAlchemy,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.UnarmedDamage,       mask: SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.CarryWeight,         mask: SlotMask.Neck || SlotMask.Hands || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.RegenerateStamina,   mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.FortifyStamina,      mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
-    {id: EnchantId.RegenerateMagicka,   mask: SlotMask.Head || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring},
-    {id: EnchantId.FortifyMagicka,      mask: SlotMask.Head || SlotMask.Neck || SlotMask.Hands || SlotMask.Ring},
-    {id: EnchantId.FortifyHealth,       mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet || SlotMask.Shield},
-    {id: EnchantId.RegenerateHealth,    mask: SlotMask.Neck || SlotMask.ChestPrimary || SlotMask.ChestSecondary || SlotMask.Ring || SlotMask.Feet},
+const mask_head = SlotMask.Head | SlotMask.Hair | SlotMask.Circlet;
+const mask_hand = SlotMask.Hands | SlotMask.Forearms;
+
+const restrictTransrator = [
+    {word: "ArmorGauntlets", mask: mask_hand},
+    {word: "ClothingHands", mask: mask_hand},
+    {word: "ArmorHelmet", mask: mask_head},
+    {word: "ClothingCirclet", mask: mask_head},
+    {word: "ClothingHead", mask: mask_head},
+    {word: "ClothingNecklace", mask: SlotMask.Amulet},
+    {word: "ClothingRing", mask: SlotMask.Ring},
+    {word: "ArmorShield", mask: SlotMask.Shield},
+    {word: "ClothingBody", mask: SlotMask.Body},
+    {word: "ArmorCuirass", mask: SlotMask.Body},
+    {word: "ClothingFeet", mask: SlotMask.Feet},
+    {word: "ArmorBoots", mask: SlotMask.Feet},
+    {word: "WAF_ClothingCloak", mask: SlotMask.ChestOuter}
 ];
+
+const armor_enchants = [
+    {id: EnchantId.ResistShock,         mask: SlotMask.Amulet | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.ResistPoison,        mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.ResistMagic,         mask: SlotMask.Amulet | SlotMask.Ring | SlotMask.Shield},
+    {id: EnchantId.ResistDisease,       mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.ResistFrost,         mask: SlotMask.Amulet | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.ResistFire,          mask: SlotMask.Amulet | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.Muffle,              mask: SlotMask.Feet},
+    {id: EnchantId.Waterbreathing,      mask: mask_head | SlotMask.Amulet | SlotMask.Ring},
+    {id: EnchantId.FortifyTwoHanded,    mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.FortifySneak,        mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.FortifySmithing,     mask: SlotMask.Amulet | SlotMask.Body | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyRestoration,  mask: mask_head | SlotMask.Amulet | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyPickpocket,   mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.FortifySneak,        mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.FortifyLockpicking,  mask: mask_head | SlotMask.Amulet | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyLightArmor,   mask: SlotMask.Amulet | SlotMask.Body | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyIllusion,     mask: mask_head | SlotMask.Amulet | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyHeavyArmor,   mask: SlotMask.Amulet | SlotMask.Body | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyDestruction,  mask: mask_head | SlotMask.Amulet | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyConjuration,  mask: mask_head | SlotMask.Amulet | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyBlock,        mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Shield},
+    {id: EnchantId.FortifyBarter,       mask: SlotMask.Amulet},
+    {id: EnchantId.FortifyArchery,      mask: mask_head | SlotMask.Amulet | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyAlteration,   mask: mask_head | SlotMask.Amulet | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyAlchemy,      mask: mask_head | SlotMask.Amulet | mask_hand | SlotMask.Ring},
+    {id: EnchantId.UnarmedDamage,       mask: mask_hand | SlotMask.Ring},
+    {id: EnchantId.CarryWeight,         mask: SlotMask.Amulet | mask_hand | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.RegenerateStamina,   mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.FortifyStamina,      mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet},
+    {id: EnchantId.RegenerateMagicka,   mask: mask_head | SlotMask.Body | SlotMask.Ring},
+    {id: EnchantId.FortifyMagicka,      mask: mask_head | SlotMask.Amulet | mask_hand | SlotMask.Ring},
+    {id: EnchantId.FortifyHealth,       mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet | SlotMask.Shield},
+    {id: EnchantId.RegenerateHealth,    mask: SlotMask.Amulet | SlotMask.Body | SlotMask.Ring | SlotMask.Feet},
+];
+
+var enchant_list : {name: string, id: number, restrict: string[], valid: boolean} [] = [];
 
 const getBaseQuality = (level : number) => {
     return Math.floor(level/ 5);
@@ -189,75 +211,258 @@ const setAlreadyProceed = (f : Form) => {
 }
 
 const getAlreadyProceed = (f : Form) => {
-    return StorageUtil.GetIntValue(f, "random-enchantment_proceeded", 1) > 0;
+    return StorageUtil.GetIntValue(f, "random-enchantment_proceeded", 0) > 0;
+}
+
+const doEnchant = () => {
+    return rng(0, 100) < 10;
+}
+
+const genEncAndArgStr = (item : Form, q : number) => {
+    var multiplier = getMultiplier(q);
+    var num = getNumEnchant(q);
+    var magics: number[] = [];
+    var mags: number[] = [];
+    var areas: number[] = [];
+    var durs: number[] = [];
+
+    var armor = Armor.from(item);
+    var weapon = Weapon.from(item);
+    if(armor) {
+        var filtered_a_enc = enchant_list.filter(e => {
+            if(!e.valid || !Enchantment.from(Game.getFormEx(e.id))) return false;
+            var mask = 0;
+            e.restrict.forEach(r => {
+                var obj = restrictTransrator.find(r2 => r2.word == r);
+                if(obj) mask |= obj.mask;
+            });
+            return (armor!.getSlotMask() & mask) != 0;
+        });
+        if(filtered_a_enc.length) {
+            for(; num > 0; num--) {
+                var enc_id = filtered_a_enc[rng(0, filtered_a_enc.length)].id;
+                var enc = Enchantment.from(Game.getFormEx(enc_id));
+                if(!enc) continue;
+                for(var i = 0; i < enc.getNumEffects(); i++) {
+                    var m = enc.getNthEffectMagicEffect(i)!;
+                    if(magics.find(e => e == m.getFormID())) continue;
+                    magics.push(m.getFormID());
+                    mags.push(enc.getNthEffectMagnitude(i) * multiplier);
+                    areas.push(enc.getNthEffectArea(i));
+                    durs.push(enc.getNthEffectDuration(i) * multiplier);
+                }
+            }
+            return genArgStr(3000, magics, mags, areas, durs);
+        }
+    } else if(weapon) {
+        var filtered_w_enc = enchant_list.filter(e => {
+            if(!e.valid || !Enchantment.from(Game.getFormEx(e.id))) return false;
+            return e.restrict.length == 0;
+        });
+        if(filtered_w_enc.length) {
+            for(; num > 0; num--) {
+                var enc_id = filtered_w_enc[rng(0, filtered_w_enc.length)].id;
+                var enc = Enchantment.from(Game.getFormEx(enc_id));
+                if(!enc) continue;
+                for(var i = 0; i < enc.getNumEffects(); i++) {
+                    var m = enc.getNthEffectMagicEffect(i)!;
+                    if(magics.find(e => e == m.getFormID())) continue;
+                    magics.push(m.getFormID());
+                    mags.push(enc.getNthEffectMagnitude(i) * multiplier);
+                    areas.push(enc.getNthEffectArea(i));
+                    durs.push(enc.getNthEffectDuration(i) * multiplier);
+                }
+            }
+            return genArgStr(3000, magics, mags, areas, durs);
+        }
+    }
+    return null;
+}
+
+const genArgStr = (charge : number, magics : number[], mags : number[], areas : number[], durs : number[]) => {
+    return charge + "|" + [magics.join(":"), mags.join(":"), areas.join(":"), durs.join(":")].join(",");
 }
 
 const rng = (min : number, max : number) => {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const mainloop = async () => {
-    var player = Game.getPlayer()!;
-    var actors : Actor[] = MiscUtil.ScanCellNPCs(player);
-    actors.forEach(a => {
-        var level = a.getLevel();
-        var items : ObjectReference[] = [];
-        var tmp : Form | null = a.getEquippedWeapon(false);
-        if(tmp != null) items.push(ObjectReference.from(tmp)!);
-        tmp = a.getEquippedWeapon(true);
-        if(tmp) items.push(ObjectReference.from(tmp)!);
-        for(var mask = 1; mask <= 0x8000000; mask << 1) {
-            tmp = a.getWornForm(mask);
-            if(tmp) items.push(ObjectReference.from(tmp)!);
-        }
-        items.forEach(item => {
-            printConsole(item.getName());
-            if(!item.getEnchantment() && !getAlreadyProceed(item)) {
-                var enc : Enchantment | null = null;
-                var a = Armor.from(item);
-                var w = Weapon.from(item);
-                if(item.getType() == FormType.Armor) {
-                    var filtered = armor_enchants.filter(e => {
-                        if(a == null) return false;
-                        return (a.getSlotMask() & e.mask) != 0;
-                    });
-                    enc = Enchantment.from(Game.getForm(filtered[rng(0, filtered.length)].id));
-                }
-                if(item.getType() == FormType.Weapon) {
-                    enc = Enchantment.from(Game.getForm(weapon_enchants[rng(0, weapon_enchants.length)].id));
-                }
-                if(enc) {
-                    var multiplier = getMultiplier(randomizeQuality(getBaseQuality(level)));
-                    var magics: MagicEffect[] = [];
-                    var base_mags: number[] = [];
-                    var base_areas: number[] = [];
-                    var base_durs: number[] = [];
-                    for( var i = 0; i < enc.getNumEffects(); i++){
-                        if(enc.getNthEffectMagicEffect(i)) {
-                            magics.push(enc.getNthEffectMagicEffect(i)!);
-                            base_mags.push(enc.getNthEffectMagnitude(i) * multiplier);
-                            base_areas.push(enc.getNthEffectArea(i));
-                            base_durs.push(enc.getNthEffectDuration(i));
-                        }
-                    }
-                    if(magics.length){
-                        item.getItemHealthPercent();
-                        item.createEnchantment(3000, magics, base_mags, base_areas, base_durs);
-                        setAlreadyProceed(item);
-                    }
-                }
-            }
-        });
-    })
-    await Utility.wait(1);
-    mainloop ();
+const genEnchantObj = () => {
+    return ObjectReference.from(Game.getFormFromFile(0x00000803, "RandomEnchantment.esp"));
 }
 
-once('tick', () => {
-    printConsole('Hello! You can view this in the Skyrim ~ console on the Main Menu when the game runs')
+var stall = true;
+var enchant_buffer : {id: number, enc_id : number}[] = [];
+
+const mainloop = () => {
+    if (!stall) {
+        stall = true;
+        main();
+        Utility.wait(5).then(() => {
+            stall = false;
+        })
+    }
+}
+
+const main = () => {
+    var player : Actor = Game.getPlayer()!;
+    var level = player.getLevel() > 50 ? 50 : player.getLevel();
+    var actors : Actor[] = MiscUtil.ScanCellNPCs(player);
+    actors.forEach(a => {
+        for(var mask = 1; mask <= 0x8000000; mask = mask << 1) {
+            if(!doEnchant()) continue;
+            var armor = a.getWornForm(mask);
+            if (!armor) continue;
+            if(getAlreadyProceed(armor)) continue;
+            setAlreadyProceed(armor);
+            if(!doEnchant()) return;
+            var enc = Enchantment.from(callNative("WornObject", "GetEnchantment", undefined, a, 0, mask));
+            if(enc) continue;
+            var str = genEncAndArgStr(armor, randomizeQuality(getBaseQuality(level)));
+            if(!str) return;
+            printConsole([armor.getName(), str].join(":"));
+            a.sendModEvent("RandomEnchantment_ArmorCreateEnchantment", str, mask);
+        }
+        for(var hand = 0; hand < 2; hand++) {
+            if(!doEnchant()) continue;
+            var handitem = a.getEquippedObject(hand);
+            if (!handitem) continue;
+            if(getAlreadyProceed(handitem)) continue;
+            setAlreadyProceed(handitem);
+            if(!doEnchant()) return;
+            var enc = Enchantment.from(callNative("WornObject", "GetEnchantment", undefined, a, hand, 0));
+            if(enc) continue;
+            var str = genEncAndArgStr(handitem, randomizeQuality(getBaseQuality(level)));
+            if(!str) return;
+            printConsole([handitem.getName(), str].join(":"));
+            a.sendModEvent("RandomEnchantment_WeaponCreateEnchantment", str, hand);
+        }
+    });
+    MiscUtil.ScanCellObjects(FormType.Armor, player).forEach(obj => {
+        var base = Armor.from(obj.getBaseObject()!);
+        if (!base) return;
+        if(getAlreadyProceed(base)) return;
+        setAlreadyProceed(base);
+        if(!doEnchant()) return;
+        if(obj.getEnchantment()) return;
+        var str = genEncAndArgStr(base, randomizeQuality(getBaseQuality(level)));
+        if(!str) return;
+        printConsole([base.getName(), str].join(":"));
+        obj.sendModEvent("RandomEnchantment_ObjCreateEnchantment", str, 0);
+    });
+    MiscUtil.ScanCellObjects(FormType.Weapon, player).forEach(obj => {
+        var base = Weapon.from(obj.getBaseObject()!);
+        if (!base) return;
+        if(getAlreadyProceed(base)) return;
+        setAlreadyProceed(base);
+        if(!doEnchant()) return;
+        if(obj.getEnchantment()) return;
+        var str = genEncAndArgStr(base, randomizeQuality(getBaseQuality(level)));
+        if(!str) return;
+        printConsole([base.getName(), str].join(":"));
+        obj.sendModEvent("RandomEnchantment_ObjCreateEnchantment", str, 0);
+    });
+    MiscUtil.ScanCellObjects(FormType.Container, player).forEach(obj => {
+        var forms = obj.getContainerForms();
+        forms?.forEach(f => {
+            var armor = Armor.from(f);
+            var weapon = Weapon.from(f);
+            var str : string | null = null;
+            if(armor && !getAlreadyProceed(armor) && !armor.getEnchantment()) {
+                setAlreadyProceed(armor);
+                if(!doEnchant()) return;
+                str = genEncAndArgStr(armor, randomizeQuality(getBaseQuality(level)));
+            }
+            if(weapon && !getAlreadyProceed(weapon) && !weapon.getEnchantment()) {
+                setAlreadyProceed(weapon);
+                if(!doEnchant()) return;
+                str = genEncAndArgStr(weapon, randomizeQuality(getBaseQuality(level)));
+            }
+            if(str) {
+                printConsole([Form.from(f)!.getName(), str].join(":"));
+                genEnchantObj()!.sendModEvent("RandomEnchantment_ContainerEnchantment", str, Form.from(f)!.getFormID());
+                enchant_buffer.push({id:Form.from(f)!.getFormID()!, enc_id: 0});
+            }
+            if (armor || weapon) {
+                var item = Form.from(f)!;
+                var b = enchant_buffer.find(b => b.id == item.getFormID());
+                if(!b || !b.enc_id) return;
+                var enc = Enchantment.from(Game.getFormEx(b.enc_id));
+                if (!enc) return;
+                TESModPlatform.addItemEx(obj, item, 1, 1, enc, 3000, false, 100, item.getName(), 0, null, 0 );
+                obj.removeItem(Form.from(f)!, 1, false, null);
+                enchant_buffer = enchant_buffer.filter(b2 => b2.id != b!.id);
+            }
+        });
+    });
+}
+
+on('modEvent', (event) => {
+    if(event.eventName == "RandomEnchantment_Ready") {
+        stall = false;
+    }
+    if(event.eventName == "RandomEnchantment_ContainerEnchantmentReturn") {
+        var enc = Form.from(event.sender);
+        var item_id = event.numArg;
+        var enc_id = parseInt(event.strArg);
+        var b = enchant_buffer.find(b => b.id == item_id);
+        if(b) b.enc_id = enc?.getFormID()!;
+    }
+});
+
+on('update', () => {
+    if(Utility.isInMenuMode()) return;
+    mainloop();
 })
 
 once('update', () => {
-    Debug.messageBox('Hello! This will appear when a new game is started or an existing game is loaded')
-    mainloop();
+    EnchantList.forEach(e => {
+        var obj : {
+            name: string;
+            id: number;
+            restrict: string[];
+            valid: boolean;
+        } = {
+            name: e.name,
+            id: parseInt(e.id, 16),
+            restrict: [],
+            valid: e.base
+        };
+        var enc = Enchantment.from(Game.getFormEx(obj.id));
+        if(enc) {
+            var flist = enc.getKeywordRestrictions();
+            if(flist) {
+                var i = 0;
+                while(flist.getAt(i)) {
+                    var kwd = Keyword.from(flist.getAt(i)!);
+                    if(kwd?.getString()) obj.restrict.push(kwd?.getString()!);
+                    i++;
+                }
+            }
+            if(e.restrict_mod) {
+                e.restrict_mod.forEach(r => obj.restrict.push(r));
+            }
+            enchant_list.push(obj);
+        }
+    });
+    writeLogs("test-mod", JSON.stringify(enchant_list, null, "    "));
+    return;
+    printConsole("search enchants");
+    for(var n = 0x1000; n < 0xF00000; n++) {
+        try {
+            var frm = Game.getFormEx(n);
+            if(frm) {
+                var enc = Enchantment.from(frm);
+                if(enc) {
+                    var j = {
+                        name: enc!.getName(),
+                        id: n.toString(16),
+                        base: !(enc!.getBaseEnchantment())
+                    };
+                    writeLogs("test-mod", JSON.stringify(j));
+                }
+            }
+        } catch(e) {
+        }
+    }
 })

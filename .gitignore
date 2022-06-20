@@ -1,4 +1,5 @@
 node_modules
+build-tool
 dist
 build
 *.tgz

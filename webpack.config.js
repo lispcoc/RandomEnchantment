@@ -5,6 +5,7 @@ const WebpackShellPluginNext = require('webpack-shell-plugin-next');
 const { getFips } = require('crypto');
 
 // Configure webpack output file folder and file name
+const jsonFolder = path.resolve(__dirname, './json')
 const outputFolder = path.resolve(__dirname, './build')
 const outputFilename = `${packageInfo.name}.js`
 
@@ -35,10 +36,18 @@ if (process.env['DEPLOY_PLUGIN']?.includes('true')) {
         process.exit(1)
     }
 
-    const outputFile = path.join(outputFolder, outputFilename)
-    const skyrimPlatformPluginsDirectory = path.resolve(skyrimFolder, 'Data', 'Platform', 'PluginsDev')
+    plugins.push(new WebpackShellPluginNext({
+        onAfterDone: {
+            scripts: [
+                `xcopy "${path.join(jsonFolder, "*")}" "${outputFolder}" /I /Y && echo "Copied ${jsonFolder} to ${outputFolder}"`
+            ]
+        }
+    }))
+
+    const skyrimPlatformPluginsDirectory = path.resolve(skyrimFolder, 'Platform', 'PluginsDev')
     fs.mkdirSync(skyrimPlatformPluginsDirectory, { recursive: true })
-    const pluginDestinationPath = path.join(skyrimPlatformPluginsDirectory, outputFilename)
+    const outputFile = path.join(outputFolder, "*");
+    const pluginDestinationPath = path.join(skyrimPlatformPluginsDirectory, "*");
     let copyCommand = `xcopy "${outputFile}" "${skyrimPlatformPluginsDirectory}" /I /Y && echo "Copied ${outputFilename} to ${pluginDestinationPath}"`
     if (! process.platform == 'win32')
         copyCommand = `cp "${outputFile}" "${skyrimPlatformPluginsDirectory}" && echo "Copied ${outputFilename} to ${pluginDestinationPath}"`
@@ -47,7 +56,7 @@ if (process.env['DEPLOY_PLUGIN']?.includes('true')) {
 // When `npm run zip` is run, the project is compiled, webpack is run, and a zip file named `[project name]-[project version].zip`
 // is created in the project folder. The .zip file can be distributed via mod managers, e.g. on sites on NexusMods
 } else if (process.env['ZIP_PLUGIN']?.includes('true')) {
-    const outputFile = path.join(outputFolder, outputFilename)
+    const outputFile = path.join(outputFolder, "*")
     const zipFile = `${packageInfo.name}-${packageInfo.version}.zip`
     const localPlatformFolder = path.join('.', 'Platform')
     const localPluginsFolder = path.join(localPlatformFolder, 'Plugins')

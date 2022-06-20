@@ -1,0 +1,17 @@
+<?xml version='1.0'?><!-- Game is either sse, tesv, or fo4 -->
+<PapyrusProject xmlns="PapyrusProject.xsd" 
+    Flags="TESV_Papyrus_Flags.flg" 
+    Game="sse" 
+    Output="D:\MO2\overwrite\scripts" 
+    Optimize="false" 
+    Release="false" 
+    Final="false">
+    <Imports>
+        <Import>.\dependencies\skse64\Data\Scripts\Source</Import>
+        <Import>D:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Source\Scripts</Import>
+        <Import>D:\MO2\mods\PapyrusUtil SE - Modders Scripting Utility Functions\Scripts</Import>
+    </Imports>
+    <Folders>
+        <Folder>.\psc</Folder>
+    </Folders>
+</PapyrusProject>

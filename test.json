@@ -1,0 +1,4113 @@
+[
+    {
+        "name": "",
+        "id": 94450,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魔法耐性",
+        "id": 94873,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "",
+        "id": 94876,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 94878,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マグナスのかせ",
+        "id": 95074,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マグナスの杖効果",
+        "id": 145824,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "麻痺",
+        "id": 170826,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "デイドラ追放",
+        "id": 170831,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷の精霊召喚",
+        "id": 170834,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "幽鬼支配",
+        "id": 170835,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドレモラ・ウォーロック召喚",
+        "id": 170836,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "死霊支配",
+        "id": 170838,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷の精霊召喚",
+        "id": 170839,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "デイドラ送還",
+        "id": 170840,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ファイアボール",
+        "id": 170841,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "アイスストーム",
+        "id": 170842,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷雪",
+        "id": 170843,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "チェインライトニング",
+        "id": 170844,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎の壁",
+        "id": 170845,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "冷気の壁",
+        "id": 170846,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷の壁",
+        "id": 170847,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "口封じ",
+        "id": 170852,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "激怒",
+        "id": 170853,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "他者透明",
+        "id": 170855,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "集団鎮静",
+        "id": 170856,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "戦慄",
+        "id": 170861,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "他者治癒",
+        "id": 170862,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "死者撃退の光",
+        "id": 170865,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "聖者の涙",
+        "id": 170866,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 170902,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "死者撃退",
+        "id": 170904,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "激しき力",
+        "id": 181652,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "静かなる月の付呪",
+        "id": 241842,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "静かなる月の付呪",
+        "id": 241872,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "静かなる月の付呪",
+        "id": 241873,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "火炎の魂縛",
+        "id": 262147,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 285738,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 285740,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 285741,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 285744,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 285749,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 285750,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 285751,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 285753,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 286027,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 286038,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 286040,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286041,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286103,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286575,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286601,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286605,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 286622,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 300296,
+        "restrict": [
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ArmorHelmet",
+            "ClothingCirclet",
+            "ClothingHead",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "体力上昇",
+        "id": 300297,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 300298,
+        "restrict": [
+            "ClothingBody",
+            "ArmorCuirass",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingFeet",
+            "ArmorBoots"
+        ],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 300299,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 300300,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 300301,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 302007,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "ファイアボルト",
+        "id": 313035,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "アイススパイク",
+        "id": 319191,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ライトニングボルト",
+        "id": 319193,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "火炎",
+        "id": 319194,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷撃",
+        "id": 319196,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "灯明",
+        "id": 319197,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373843,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373844,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373845,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373846,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373847,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 373848,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373849,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373850,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373851,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373852,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373853,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 373854,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373855,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373856,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373857,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373858,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373859,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魂縛",
+        "id": 373860,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "氷(戦慄)",
+        "id": 373861,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "恐怖",
+        "id": 373862,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "恐怖",
+        "id": 373863,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "恐怖",
+        "id": 373864,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "恐怖",
+        "id": 373865,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "恐怖",
+        "id": 373866,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 373868,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 373869,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 373870,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 373871,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 373872,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒耐性",
+        "id": 411943,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "破壊上昇",
+        "id": 411944,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "交渉と片手武器上昇",
+        "id": 411945,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒耐性",
+        "id": 411951,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "会話と片手武器上昇",
+        "id": 411952,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魔力の剣",
+        "id": 433383,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "よろめき",
+        "id": 468596,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 471848,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "変性上昇",
+        "id": 499975,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 499976,
+        "restrict": [
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorShield"
+        ],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 499977,
+        "restrict": [
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorGauntlets",
+            "ArmorBoots",
+            "ClothingFeet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 499978,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 499979,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 499981,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 499982,
+        "restrict": [
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 499983,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 499984,
+        "restrict": [
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 499985,
+        "restrict": [
+            "ClothingCirclet",
+            "ArmorHelmet",
+            "ClothingHead",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 499986,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 499987,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingHead",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingRing",
+            "ClothingCirclet",
+            "ArmorHelmet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 499988,
+        "restrict": [
+            "ClothingFeet",
+            "ArmorBoots",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 499989,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 499990,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 499991,
+        "restrict": [
+            "ClothingBody",
+            "ArmorCuirass",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 499992,
+        "restrict": [
+            "ArmorBoots",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingFeet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 499993,
+        "restrict": [
+            "ClothingNecklace"
+        ],
+        "valid": false
+    },
+    {
+        "name": "スタミナ回復上昇",
+        "id": 499994,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 499995,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": false
+    },
+    {
+        "name": "ジュリアノスの祝福",
+        "id": 558337,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "アカトシュの祝福",
+        "id": 558339,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "アーケイの祝福",
+        "id": 558340,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ディベラの祝福",
+        "id": 558342,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "キナレスの祝福",
+        "id": 558344,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マーラの祝福",
+        "id": 558345,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ステンダールの祝福",
+        "id": 558346,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "タロスの祝福",
+        "id": 558347,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ゼニタールの祝福",
+        "id": 558348,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570971,
+        "restrict": [
+            "ClothingRing",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ArmorGauntlets",
+            "ArmorHelmet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570973,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570974,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570975,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570976,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 570977,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "モラグ・バルのメイス魔術",
+        "id": 596708,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "“メエルーンズのカミソリ”の魔術",
+        "id": 596711,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナミラの指輪",
+        "id": 596712,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "水中呼吸",
+        "id": 600694,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingCirclet",
+            "ClothingHead",
+            "ArmorHelmet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "消音",
+        "id": 600695,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet"
+        ],
+        "valid": false
+    },
+    {
+        "name": "ワバジャックダメージ",
+        "id": 635461,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ワバジャックダメージ",
+        "id": 635572,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒ガス",
+        "id": 656240,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "目覚めの悪夢",
+        "id": 658843,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "亡霊召喚",
+        "id": 690378,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "体力吸収",
+        "id": 696645,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 696664,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 696665,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力吸収",
+        "id": 696666,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力吸収",
+        "id": 696667,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力吸収",
+        "id": 696668,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力吸収",
+        "id": 696669,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 696670,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 696671,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 696672,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 696673,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 696674,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 696675,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 696676,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 696677,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "バニッシュ",
+        "id": 707511,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "バニッシュ",
+        "id": 707512,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "バニッシュ",
+        "id": 707513,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "麻痺",
+        "id": 707514,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "麻痺",
+        "id": 707515,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "麻痺",
+        "id": 707516,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 709708,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 709709,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 709710,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 709711,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 709712,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 709715,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 709716,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 709717,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 709718,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 709719,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 709720,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 709721,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 709722,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 709723,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 709724,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 709727,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 709728,
+        "restrict": [
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "体力上昇",
+        "id": 709729,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力上昇",
+        "id": 709730,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 709731,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 709732,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 709733,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 709734,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 709735,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 709736,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 709737,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 709738,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 709739,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 709740,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 709741,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 709742,
+        "restrict": [
+            "ClothingCirclet",
+            "ArmorHelmet",
+            "ArmorCuirass",
+            "ClothingRing",
+            "ClothingBody",
+            "ClothingHead"
+        ],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 709743,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 709744,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 709745,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 709746,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 709747,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 709748,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 709749,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 709750,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 709751,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 709752,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 709753,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 709754,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 709755,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 709756,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 709757,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 709758,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ回復上昇",
+        "id": 709759,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ回復上昇",
+        "id": 709760,
+        "restrict": [
+            "ArmorBoots",
+            "ArmorCuirass",
+            "ClothingFeet",
+            "ClothingNecklace",
+            "ClothingBody"
+        ],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 709761,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 709762,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 709763,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 709764,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 709765,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 709766,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 709767,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 709768,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 709779,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 709791,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 709792,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 709793,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 709794,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魅了",
+        "id": 728708,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "幽鬼作成",
+        "id": 745517,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "形なきオオカミ召喚",
+        "id": 745518,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "沈黙",
+        "id": 745519,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "錯乱",
+        "id": 745520,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "死霊作成",
+        "id": 746202,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎の精霊召喚",
+        "id": 746203,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魂縛",
+        "id": 746204,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎の罠",
+        "id": 746205,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷の罠",
+        "id": 746206,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷の罠",
+        "id": 746207,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "恐怖",
+        "id": 746208,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "抑制",
+        "id": 746209,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "治癒の手",
+        "id": 746210,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "聖者の光",
+        "id": 746211,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "減速",
+        "id": 750242,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "すべての魔法スキル上昇",
+        "id": 752176,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 752177,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 752178,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 752179,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカと魔法耐性上昇",
+        "id": 752180,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "体力上昇",
+        "id": 778236,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力上昇",
+        "id": 778237,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "体力上昇",
+        "id": 778238,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 778239,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 778240,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "重装上昇",
+        "id": 778241,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 778242,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 778243,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 778244,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 778245,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 778246,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "軽装上昇",
+        "id": 778247,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 778248,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 778249,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 778250,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 778251,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 778252,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 778253,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "弓術上昇",
+        "id": 778254,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 778255,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 778256,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 778257,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 778258,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 778259,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スリ上昇",
+        "id": 778260,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 778261,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 778262,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 778263,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 778264,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 778265,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 778266,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 778267,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 778268,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "隠密上昇",
+        "id": 778269,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 778270,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 778271,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "交渉上昇",
+        "id": 778272,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 778273,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 778274,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 778275,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ回復上昇",
+        "id": 778276,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 778277,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 778278,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 778279,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 778280,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 778281,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎耐性",
+        "id": 778282,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 778283,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 778284,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "冷気耐性",
+        "id": 778285,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 778286,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 778287,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 778288,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 778292,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 778293,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "防御上昇",
+        "id": 778294,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 778295,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 778296,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 778297,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 783349,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "クモの制御",
+        "id": 793088,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "スペルブレイカー",
+        "id": 807415,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魔力の両手斧FX",
+        "id": 809954,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魔力の弓",
+        "id": 809955,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "呼びかけのシャウト",
+        "id": 866018,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 866685,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "隠れたポケット",
+        "id": 867001,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "機敏な指先",
+        "id": 867002,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ずる賢い手",
+        "id": 867003,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "詐欺師の声",
+        "id": 867004,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "向上した機敏な指先",
+        "id": 867005,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "向上した隠れたポケット",
+        "id": 867006,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "向上したずる賢い手",
+        "id": 867007,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "向上した詐欺師の声",
+        "id": 867008,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "忍び足",
+        "id": 867009,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "隠密と破壊上昇",
+        "id": 902222,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "DA10ReanimateEnch",
+        "id": 905256,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "クモの制御",
+        "id": 940017,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マジカ回復上昇",
+        "id": 941890,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 942175,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "黒檀の刀剣の魔法",
+        "id": 959116,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 959805,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドラゴンダメージ",
+        "id": 989891,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マグナスのかせ",
+        "id": 989995,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ボエシアの抱擁",
+        "id": 992201,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "エルフスレイヤー",
+        "id": 992250,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1006871,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "赤鷲",
+        "id": 1006872,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "戦慄",
+        "id": 1006873,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷(戦慄)",
+        "id": 1006885,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ハルディールの杖",
+        "id": 1006886,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷(戦慄)",
+        "id": 1006887,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷(戦慄)",
+        "id": 1006888,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "氷(戦慄)",
+        "id": 1006889,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ブラッドソーン",
+        "id": 1006897,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "肉食獣の恩寵",
+        "id": 1006898,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フェザーリフト・ポケット",
+        "id": 1008912,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "鍵師の手触り",
+        "id": 1008913,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "収集家の食指",
+        "id": 1008914,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "語り部の接触",
+        "id": 1008915,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの鉤爪",
+        "id": 1008920,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの鉤爪",
+        "id": 1008921,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの鉤爪",
+        "id": 1008922,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの鉤爪",
+        "id": 1008923,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの鉤爪",
+        "id": 1008924,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの嵐",
+        "id": 1008926,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの嵐",
+        "id": 1008927,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの嵐",
+        "id": 1008928,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの嵐",
+        "id": 1008929,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの嵐",
+        "id": 1008930,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "調音",
+        "id": 1009925,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009927,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009928,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009929,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009930,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009931,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "調音",
+        "id": 1009932,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1013743,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "吸血鬼のフード",
+        "id": 1016292,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ハーシーンの指輪",
+        "id": 1016577,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "呪われたハーシーンの指輪",
+        "id": 1016578,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1016590,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1016591,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1016592,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1016593,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1016594,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "闇の生贄",
+        "id": 1016928,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "コナヒリクの特権",
+        "id": 1016929,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "オタールの遺言状",
+        "id": 1016930,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ヴォクンの熟練",
+        "id": 1016931,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ヴォルサングの策謀",
+        "id": 1016932,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ブロムジュナールの謎",
+        "id": 1016933,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "学問への熟練",
+        "id": 1022211,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "クロシスの口実",
+        "id": 1022230,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ヴォレンドラングの付呪",
+        "id": 1025842,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1032173,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "恐怖",
+        "id": 1032183,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032283,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032284,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032285,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032286,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032287,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1032288,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "ナイチンゲールの後光",
+        "id": 1035263,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの後光",
+        "id": 1035264,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの後光",
+        "id": 1035265,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの支配",
+        "id": 1035266,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの支配",
+        "id": 1035267,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの支配",
+        "id": 1035268,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの歩幅",
+        "id": 1035269,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの歩幅",
+        "id": 1035270,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの歩幅",
+        "id": 1035271,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの決意",
+        "id": 1035272,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの決意",
+        "id": 1035273,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ナイチンゲールの決意",
+        "id": 1035274,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "透明化",
+        "id": 1039297,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "惑わし",
+        "id": 1039302,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドーンブレイカー",
+        "id": 1044020,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "バックスタブ",
+        "id": 1044829,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドラゴンダメージ",
+        "id": 1047027,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドラゴンダメージ",
+        "id": 1047028,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドラゴンダメージ",
+        "id": 1047029,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ドラゴンダメージ",
+        "id": 1047030,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒耐性",
+        "id": 1052253,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "毒耐性",
+        "id": 1052254,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "疾病耐性",
+        "id": 1052258,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "疾病耐性",
+        "id": 1052259,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1055026,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "ノッチのつるはし",
+        "id": 1055152,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "サールザルの力",
+        "id": 1055336,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ボーナスダメージ",
+        "id": 1055707,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1055711,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "キーニングの針",
+        "id": 1058607,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "抑圧の雲",
+        "id": 1063034,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068395,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068396,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068397,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068399,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068400,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068401,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068402,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068403,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1068404,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068405,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068406,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068407,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068408,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068409,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1068410,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068411,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068412,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068413,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068414,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1068415,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068416,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068417,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068418,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068419,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1068420,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068426,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068427,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068428,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068429,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1068430,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1068431,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1068432,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1068433,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1069648,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "ブライアハート・ガイス",
+        "id": 1071149,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ハンツマンの腕前",
+        "id": 1071152,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "薄弱",
+        "id": 1071155,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ウィンドシアバッシュ",
+        "id": 1071618,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "調音",
+        "id": 1074698,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "フロストフィード",
+        "id": 1074709,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "体力上昇",
+        "id": 1077193,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 1077194,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 1077195,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "HMS上昇",
+        "id": 1077196,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "カイネの祝福",
+        "id": 1080878,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "シャドウスライヴ",
+        "id": 1082696,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "シャドウストレングス",
+        "id": 1082697,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "シャドウストライク",
+        "id": 1082698,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "シャドウサイト",
+        "id": 1082699,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1087415,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1087674,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1087682,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1087683,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1087684,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1087685,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "素手上昇",
+        "id": 1089643,
+        "restrict": [
+            "ClothingRing",
+            "ClothingHands",
+            "ArmorGauntlets"
+        ],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090141,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090142,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090143,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090144,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090145,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ダメージ",
+        "id": 1090146,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "毒ガス",
+        "id": 1090152,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒ガス",
+        "id": 1090153,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒ガス",
+        "id": 1090154,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒ガス",
+        "id": 1090155,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "毒ガス",
+        "id": 1090156,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1090157,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 1090174,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 1090175,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 1090258,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 1090259,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 1090260,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 1090261,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎上",
+        "id": 1090262,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "",
+        "id": 1093909,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "ブライアハート・ライフフォース",
+        "id": 1098989,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "スプリントハンマー",
+        "id": 1100462,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 1100768,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 1100769,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 1100770,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 1101606,
+        "restrict": [
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1106683,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1106684,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1106685,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1106686,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "変性上昇",
+        "id": 1106687,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1106688,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1106689,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1106690,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1106691,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1106692,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1106693,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1106694,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1106695,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1106696,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1106697,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1106698,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1106699,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1106700,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1106701,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1106702,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1106703,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "回復上昇",
+        "id": 1106704,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1106705,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1106706,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1106707,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ率上昇",
+        "id": 1106708,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1106709,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1106710,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1106711,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1106712,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "ドレモラ召喚",
+        "id": 1106829,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1107119,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "変性上昇＆マジカ回復",
+        "id": 1108689,
+        "restrict": [
+            "ArmorCuirass",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "召喚上昇＆マジカ回復",
+        "id": 1108690,
+        "restrict": [
+            "ArmorCuirass",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "破壊上昇＆マジカ回復",
+        "id": 1108691,
+        "restrict": [
+            "ArmorCuirass",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "幻惑上昇＆マジカ回復",
+        "id": 1108692,
+        "restrict": [
+            "ArmorCuirass",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "回復上昇＆マジカ回復",
+        "id": 1108693,
+        "restrict": [
+            "ArmorCuirass",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1108838,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1108839,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1108840,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1108841,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1108842,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": false
+    },
+    {
+        "name": "体力吸収",
+        "id": 1110562,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 1110563,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 1110564,
+        "restrict": [],
+        "valid": false
+    },
+    {
+        "name": "黒檀の剣の魔法",
+        "id": 1112816,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "調音",
+        "id": 1112943,
+        "restrict": [
+            "ClothingNecklace"
+        ],
+        "valid": true
+    },
+    {
+        "name": "錬金術上昇",
+        "id": 1112944,
+        "restrict": [
+            "ClothingRing",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ArmorGauntlets",
+            "ArmorHelmet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "変性上昇",
+        "id": 1112945,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "防御上昇",
+        "id": 1112946,
+        "restrict": [
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorShield"
+        ],
+        "valid": true
+    },
+    {
+        "name": "持ち運び重量上昇",
+        "id": 1112947,
+        "restrict": [
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorGauntlets",
+            "ArmorBoots",
+            "ClothingFeet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "召喚上昇",
+        "id": 1112948,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "破壊上昇",
+        "id": 1112949,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "治癒率上昇",
+        "id": 1112950,
+        "restrict": [
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "体力上昇",
+        "id": 1112951,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "重装上昇",
+        "id": 1112952,
+        "restrict": [
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "幻惑上昇",
+        "id": 1112953,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "軽装上昇",
+        "id": 1112954,
+        "restrict": [
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "開錠術上昇",
+        "id": 1112955,
+        "restrict": [
+            "ClothingCirclet",
+            "ArmorHelmet",
+            "ClothingHead",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "マジカ上昇",
+        "id": 1112956,
+        "restrict": [
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ArmorHelmet",
+            "ClothingCirclet",
+            "ClothingHead",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "マジカ回復上昇",
+        "id": 1112957,
+        "restrict": [
+            "ClothingCirclet",
+            "ArmorHelmet",
+            "ArmorCuirass",
+            "ClothingRing",
+            "ClothingBody",
+            "ClothingHead"
+        ],
+        "valid": true
+    },
+    {
+        "name": "弓術上昇",
+        "id": 1112958,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingHead",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingRing",
+            "ClothingCirclet",
+            "ArmorHelmet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "片手武器上昇",
+        "id": 1112959,
+        "restrict": [
+            "ClothingFeet",
+            "ArmorBoots",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "スリ上昇",
+        "id": 1112960,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "回復上昇",
+        "id": 1112961,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingHead",
+            "ClothingCirclet",
+            "ClothingBody",
+            "ArmorHelmet",
+            "ArmorCuirass"
+        ],
+        "valid": true
+    },
+    {
+        "name": "鍛造上昇",
+        "id": 1112962,
+        "restrict": [
+            "ClothingBody",
+            "ArmorCuirass",
+            "ClothingHands",
+            "ArmorGauntlets",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "隠密上昇",
+        "id": 1112963,
+        "restrict": [
+            "ArmorBoots",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingFeet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "交渉上昇",
+        "id": 1112964,
+        "restrict": [
+            "ClothingNecklace"
+        ],
+        "valid": true
+    },
+    {
+        "name": "スタミナ上昇",
+        "id": 1112965,
+        "restrict": [
+            "ClothingBody",
+            "ArmorCuirass",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingFeet",
+            "ArmorBoots"
+        ],
+        "valid": true
+    },
+    {
+        "name": "スタミナ回復上昇",
+        "id": 1112966,
+        "restrict": [
+            "ArmorBoots",
+            "ArmorCuirass",
+            "ClothingFeet",
+            "ClothingNecklace",
+            "ClothingBody"
+        ],
+        "valid": true
+    },
+    {
+        "name": "両手武器上昇",
+        "id": 1112967,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet",
+            "ArmorGauntlets",
+            "ClothingHands",
+            "ClothingNecklace",
+            "ClothingRing"
+        ],
+        "valid": true
+    },
+    {
+        "name": "素手上昇",
+        "id": 1112968,
+        "restrict": [
+            "ClothingRing",
+            "ClothingHands",
+            "ArmorGauntlets"
+        ],
+        "valid": true
+    },
+    {
+        "name": "消音",
+        "id": 1112969,
+        "restrict": [
+            "ArmorBoots",
+            "ClothingFeet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "疾病耐性",
+        "id": 1112970,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "炎耐性",
+        "id": 1112971,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "冷気耐性",
+        "id": 1112972,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "魔法耐性",
+        "id": 1112973,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ClothingNecklace",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "毒耐性",
+        "id": 1112974,
+        "restrict": [
+            "ArmorShield",
+            "ClothingBody",
+            "ClothingNecklace",
+            "ClothingRing",
+            "ArmorCuirass",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "雷撃耐性",
+        "id": 1112975,
+        "restrict": [
+            "ClothingRing",
+            "ArmorShield",
+            "ArmorBoots",
+            "ClothingNecklace",
+            "ClothingFeet",
+            "WAF_ClothingCloak"
+        ],
+        "valid": true
+    },
+    {
+        "name": "水中呼吸",
+        "id": 1112976,
+        "restrict": [
+            "ClothingNecklace",
+            "ClothingRing",
+            "ClothingCirclet",
+            "ClothingHead",
+            "ArmorHelmet"
+        ],
+        "valid": true
+    },
+    {
+        "name": "体力吸収",
+        "id": 1112977,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "スタミナ吸収",
+        "id": 1112978,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "バニッシュ",
+        "id": 1112979,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "恐怖",
+        "id": 1112980,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "炎ダメージ",
+        "id": 1112981,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "冷気ダメージ",
+        "id": 1112982,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マジカダメージ",
+        "id": 1112983,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "麻痺",
+        "id": 1112984,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "雷撃ダメージ",
+        "id": 1112985,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "魂縛",
+        "id": 1112986,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "スタミナダメージ",
+        "id": 1112987,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "聖者の息吹",
+        "id": 1112988,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "マジカ吸収",
+        "id": 1112989,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "火葬",
+        "id": 1113331,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "サンダーボルト",
+        "id": 1113333,
+        "restrict": [],
+        "valid": true
+    },
+    {
+        "name": "アイスジャベリン",
+        "id": 1113334,
+        "restrict": [],
+        "valid": true
+    }
+]

@@ -9,7 +9,9 @@
         "webpack:deploy:watch": "set DEPLOY_PLUGIN=true && npm run webpack -- --watch",
         "zip": "set ZIP_PLUGIN=true && npm run webpack",
         "zip:cli": "bestzip",
-        "dev": "npm i && npm run webpack:deploy:watch"
+        "dev": "npm i && npm run webpack:deploy",
+        "build-tool": "cd build-tool && curl -L -o pyro.zip https://github.com/fireundubh/pyro/releases/download/1651962568/pyro-master-1651962568.zip --insecure && unzip pyro.zip",
+        "pyro": "cd build-tool && pyro.exe ../skyrimse.ppj"
     },
     "devDependencies": {
         "bestzip": "^2.2.0",
@@ -25,6 +27,6 @@
         "skryim platform"
     ],
     "dependencies": {
-        "@skyrim-platform/skyrim-platform": "^2.3.0"
+        "@skyrim-platform/skyrim-platform": "^2.6.0"
     }
 }
